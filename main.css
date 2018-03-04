@@ -317,27 +317,4 @@ footer p {
     transform: translate(-50%, -50%) 
 }
 
-@media only screen and (max-width: 1000px) {
-    .photonav, .full-menu, ,.other-investments, .twoimage, .finance{
-        width: 100%;
-    }
 
-    .words, .form-input, .instructions{
-        display: block;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .js-search-results {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .search{
-        width: 100%;
-    }
-
-    .flight-intro {
-        padding: 15px;
-    }
-}
