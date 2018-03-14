@@ -1,0 +1,133 @@
+h3 {
+	font-size: 28px;
+}
+
+.actives{
+
+}
+
+.logoScroll{
+	height: 40px;
+	transition: width 2s;
+	-webkit-transition: width 2s;
+}
+
+.imagess{
+	max-width: 1100px;
+	font-size: 20px;
+	margin-left: 100px;
+}
+
+.pad-lr-0 {
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	margin-bottom: 30px;
+}
+
+.pad-lr-20 {
+	padding-left: 20px!important;
+	padding-right: 20px!important;
+}
+
+.mar-lr-0 {
+	margin-left:0px!important;
+	margin-right: 0px!important;
+}
+
+.p-thick {
+	font-size: 18px;
+    letter-spacing: 1px;
+    font-weight:500;
+}
+
+.circle-down {
+	height:70px;
+	width: 70px;
+	background-color: #EBEBEB;
+	border-radius: 50%;
+	border: 1px solid #DEDEDE;
+	margin: 0 auto;
+	position:relative;
+	top:-30px;
+	text-align:center;
+	color: #0C5D96;
+	padding-top:20px;
+}
+
+.desc-label {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.investors-item {
+	background-image: url('../img/investors.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.borrowers-item {
+	background-image: url('../img/borrowers.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.delay-1 {
+	animation-delay: .5s;
+}
+
+.delay-2 {
+	animation-delay: .75s;
+}
+
+.delay-3 {
+	animation-delay: 1s;
+}
+
+.light-gray {
+	color: #5f5f5f;
+}
+
+.footer-logo {
+	font-family: 'Comfortaa';
+	font-size: 20px;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+@media  (min-width: 768px){
+	.site-logo{
+		position: absolute;
+		margin: 0;
+	    top: 50%;
+	    left: 52%;
+	    margin-right: -50%;
+	    transform: translate(-50%, -50%);
+	    font-size: 25px;
+	    background-color: transparent;
+	}
+
+	.menu-left {
+	  	margin-left: -180px;
+	  	float: left:;
+	 }
+
+	.menu-right{
+		margin-right: -160px;
+		float: right;
+	}
+	.nav-menu-left-first{
+		padding-left: 200px; 
+	}
+
+	.nav-menu-left{
+		padding-left: 20px;
+	}
+
+	.nav-menu-right{
+		padding-right: 30px;
+	}
+
+	.nav-menu-right-last{
+		padding-right: 220px;
+	}
+}
