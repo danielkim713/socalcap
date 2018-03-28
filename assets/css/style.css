@@ -365,7 +365,15 @@ pre {
 }
 
 .m-left-10 {
-    margin-left: 20px;
+    margin-left: 10px;
+}
+
+.m-left-125{
+    margin-left: 125px;
+}
+
+.m-right-30{
+    margin-right: 30px;
 }
 
 /*padding top*/
@@ -516,6 +524,10 @@ pre {
 
 .height-310 {
     height: 310px !important;
+}
+
+.height-335 {
+    height: 335px !important;
 }
 
 .height-361 {

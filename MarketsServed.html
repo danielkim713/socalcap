@@ -119,7 +119,7 @@
                     <div class="row">
                         <div class="col-md-9 wow fadeIn delay-1">
                             <div class="banner-title m-top-0 ">
-                                <h1 class="text-uppercase">Products</h1>
+                                <h1 class="text-uppercase">Markets Served</h1>
                             </div>
                         </div>
                     </div>
@@ -139,114 +139,102 @@
         <!--body content start-->
         <section class="body-content">
 
-            <div class="page-content magazine-grid">
-                <div class="container">
-                    <!--feature border box start-->
-                    <div class="row">
+            <div class="m-top-30">
+                <div style="text-align: center;">
+                    <h2>Mortgage Brokers</h2>
+                    <h3>Common Sense Funding</h3>
+                    <p>SO-CAL Capital works with mortgage brokers throughout (STATES) looking to secure funding for qualified real estate transactions.  As a full-service lending partner, we pride ourselves on offering quick, efficient and flexible underwriting for nonconforming business purpose loans in an environment focused on partnership and the power of relationships.</p>
+                </div>
+                <div class="" style="text-align: center; margin-bottom: 50px; ">
+                    <p>where we serve</p>
 
-                        <div class="m-bot-50 inline-block">
-                            <!--title-->
-                            <div class="heading-title-alt text-center wow fadeIn">
-                                <h3 class="text-uppercase">Program Highlights</h3>
-                                <div class="half-txt m-top-30">SO-CAL Capital provides a range of Business Purpose Loans with flexible features and makes sense underwriting:</div>
-                            </div>
-                            <!--title-->
-                        </div>
+                    <style>
+                    #chartdiv {
+                      width: 80%;
+                      height: 500px;
+                      margin-left: auto;
+                      margin-right: auto;
+                    }
+                    </style>
 
-                        <div class="imagess m-bot-10" style="font-size: 18px;">
+                    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+                    <script src="https://www.amcharts.com/lib/3/maps/js/usaLow.js"></script>
+                    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+                    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+                    <script src="https://www.amcharts.com/lib/3/themes/none.js"></script>
 
-                        <div class="imagess m-bot-10" style="font-size:18px;">
+                    <!-- Chart code -->
+                    <script>
+                    var map = AmCharts.makeChart( "chartdiv", {
+                    "type": "map",
+                    "theme": "none",
 
-                            <div class="col-md-4 pad-lr-20 p-tb-20">
-                                <p>1st and 2nd Trust Deeds</p>
-                            </div>
-                            <div class="col-md-4 pad-lr-20 p-tb-20">
-                                <p>Loans from 50k to 5 Million</p>
-                            </div>
-                            <div class="col-md-4 pad-lr-20 p-tb-20">
-                                <p>Flexible DCRs</p>
-                            </div>
-                            <div class="col-md-4 pad-lr-20 p-tb-20">
-                                <p>Fix & Flip, Purchase, Refi & Cash-Out</p>
-                            </div>
-                            <div class="col-md-4 pad-lr-20 p-tb-20">
-                                <p>No Prepayment Penalty</p>
-                            </div>
-                            <div class="col-md-4 pad-lr-20 p-tb-20">
-                                <p>Up to 75% LTV</p>
-                            </div>
-                            <div class="col-md-4 pad-lr-20 p-tb-20">
-                                <p>No Minimum FICO</p>
-                            </div>
-                            <div class="col-md-4 pad-lr-20 p-tb-20">
-                                <p>Fixed Interest Rates</p>
-                            </div>
-                            <div class="col-md-4 pad-lr-20 p-tb-20">
-                                <p>Lending in CA, HI, NV, WA, UT, CO,FL, and more</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <!--feature border box end-->
+                      "panEventsEnabled": true,
+                      //"backgroundColor": "#666666",
+                      //"backgroundAlpha": 1,
+                      "dataProvider": {
+                        "map": "usaLow",
+                        "getAreasFromMap": true
+                      },
+                      "areasSettings": {
+                        "autoZoom": false,
+                        "color": "#CDCDCD",
+                        "colorSolid": "#5EB7DE",
+                        "selectedColor": "#5EB7DE",
+                        "outlineColor": "#666666",
+                        "rollOverColor": "#88CAE7",
+                        "rollOverOutlineColor": "#FFFFFF",
+                        "selectable": true
+                      },
+                      "listeners": [ {
+                        "event": "clickMapObject",
+                        "method": function( event ) {
+                          // deselect the area by assigning all of the dataProvider as selected object
+                          map.selectedObject = map.dataProvider;
+
+                          // toggle showAsSelected
+                          event.mapObject.showAsSelected = !event.mapObject.showAsSelected;
+
+                          // bring it to an appropriate color
+                          map.returnInitialColor( event.mapObject );
+
+                          // let's build a list of currently selected states
+                          var states = [];
+                          for ( var i in map.dataProvider.areas ) {
+                            var area = map.dataProvider.areas[ i ];
+                            if ( area.showAsSelected ) {
+                              states.push( area.title );
+                            }
+                          }
+                        }
+                      } ],
+                      "export": {
+                        "enabled": true
+                      }
+                    } );
+                    </script>
+
+                    <!-- HTML -->
+                    <div id="chartdiv"></div>
+
                 </div>
             </div>
-
-
+            <hr>
             <!--post-->
 
-            <div class="container-fluid pad-lr-0 privatelending">
-
-            <div class="container-fluid pad-lr-0 privatelending m-bot-20">
-
-                <div class="row mar-lr-0">
-                    <div class="col-md-12 pad-lr-0 investors-item p-top-50" style="text-align:center">
-                            <div class="title">
-                                <h3 class="text-uppercase light-txt" >
-                                   PRIVATE LENDING SOLUTIONS
-                                </h3>
-                            </div>
-                            <p class="light-txt p-thick">
-                                Working with Real Estate agents, brokers and investors, SO-CAL Capital excels at bringing value and innovative thinking to our partnerships. With our wide footprint and service network, our Business Purpose Loans are setting a new industry benchmark.
-                            </p>
-
-
-                            <div class="m-top-30 pad-lr-0">
-                                 <a href="#" class="btn-y"> Contact Us</a>
-
-                            <div class="m-top-30 m-bot-20 pad-lr-0">
-                                 <a href="#" class="btn-x"> Contact Us</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>   
-            </div>
-
             <div class="container-fluid" style="max-width:1200px; margin:auto">
-                <div class="title" style="text-align:center">
-
-                    <h3 class="text-uppercase">
-
-                    <h3 class="text-uppercase m-top-30">
-
-                       Why choose So-Cal?
-                    </h3>
-                    <p class="p-thick">
-                        More than a simple funding source, SO-CAL Capital is poised to serve as a value-added partner to any investment strategy. Drawing upon experience and an obsession to detail, our team approaches each transaction with precision and detailed foresight.
-                    </p>
-                </div>
-                <div class="row mar-lr-0">
+                <div class="row mar-lr-0 m-top-30" style="text-align: center">
                     <div class="col-md-6 pad-lr-0">
                         <div class="wow">
-
                             <div class="title">
-                                <h3 class="text-uppercase">
-                                   Experience
-                                </h3>
+                                <h2 class="text-uppercase">
+                                   Real Estate Agents
+                                </h2>
                             </div>
+                            <img>
+                            <h3> FAST. EFFICIENT. CONTROLLED </h3>
                             <p class="p-thick">
-                                Measured beyond years, SO-CAL Capital merges experience and knowledge with an extensive range of products and opportunities, along with a strength that lies with our ability to structure programs that focus on results with “makes sense underwriting.”
-
+                                For real estate professionals in search of the right funding partner in a seemingly crowded market, SO-CAL Capital is a preferred lender with exacting quality control processes designed to turn transactions quickly and efficiently.
                             </p>
                         </div>
                     </div>
@@ -255,13 +243,14 @@
                         <div class="wow">
 
                             <div class="title">
-                                <h3 class="text-uppercase">
-                                   Dedication
-                                </h3>
+                                <h2 class="text-uppercase">
+                                   Borrowers
+                                </h2>
                             </div>
+                            <img>
+                            <h3>FLEXIBILITY AND RESPONSIBILITY</h3>
                             <p class="p-thick">
-                                From being foresightful to being available, SO-CAL Capital’s dedication to delivering a process that is productive,  efficient and creates valuable returns for our partners sets us apart in today’s increasingly crowded market.
-
+                                A creative provider of financing solutions for nonconforming loans, SO-CAL Capital excels as a value-added partner to borrowers  and investment firms alike. In addition to our range of products, our in-house loan servicing department prides itself on unprecedented responsiveness and unparalleled customer service.
                             </p>
                         </div>
                     </div>

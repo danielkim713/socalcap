@@ -130,4 +130,22 @@ h3 {
 	.nav-menu-right-last{
 		padding-right: 220px;
 	}
+
+	.line{
+	display: inline-block;
+	width: 830px;
+	background-color: blue;
+	border: .5px solid #E3E3E3;
+	vertical-align: center;
+	margin-top: 24px;
+	}
+
+	.line2{
+	display: inline-block;
+	width: 750px;
+	background-color: blue;
+	border: .5px solid #E3E3E3;
+	vertical-align: center;
+	margin-top: 24px;
+	}
 }
