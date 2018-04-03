@@ -147,77 +147,32 @@
                 </div>
                 <div class="" style="text-align: center; margin-bottom: 50px; ">
                     <p>where we serve</p>
-
-                    <style>
-                    #chartdiv {
-                      width: 80%;
-                      height: 500px;
-                      margin-left: auto;
-                      margin-right: auto;
-                    }
-                    </style>
-
-                    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
-                    <script src="https://www.amcharts.com/lib/3/maps/js/usaLow.js"></script>
-                    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-                    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-                    <script src="https://www.amcharts.com/lib/3/themes/none.js"></script>
-
-                    <!-- Chart code -->
-                    <script>
-                    var map = AmCharts.makeChart( "chartdiv", {
-                    "type": "map",
-                    "theme": "none",
-
-                      "panEventsEnabled": true,
-                      //"backgroundColor": "#666666",
-                      //"backgroundAlpha": 1,
-                      "dataProvider": {
-                        "map": "usaLow",
-                        "getAreasFromMap": true
-                      },
-                      "areasSettings": {
-                        "autoZoom": false,
-                        "color": "#CDCDCD",
-                        "colorSolid": "#5EB7DE",
-                        "selectedColor": "#5EB7DE",
-                        "outlineColor": "#666666",
-                        "rollOverColor": "#88CAE7",
-                        "rollOverOutlineColor": "#FFFFFF",
-                        "selectable": true
-                      },
-                      "listeners": [ {
-                        "event": "clickMapObject",
-                        "method": function( event ) {
-                          // deselect the area by assigning all of the dataProvider as selected object
-                          map.selectedObject = map.dataProvider;
-
-                          // toggle showAsSelected
-                          event.mapObject.showAsSelected = !event.mapObject.showAsSelected;
-
-                          // bring it to an appropriate color
-                          map.returnInitialColor( event.mapObject );
-
-                          // let's build a list of currently selected states
-                          var states = [];
-                          for ( var i in map.dataProvider.areas ) {
-                            var area = map.dataProvider.areas[ i ];
-                            if ( area.showAsSelected ) {
-                              states.push( area.title );
-                            }
-                          }
-                        }
-                      } ],
-                      "export": {
-                        "enabled": true
-                      }
-                    } );
-                    </script>
-
-                    <!-- HTML -->
-                    <div id="chartdiv"></div>
-
                 </div>
+                <script src="js/jquery.vmap.js"></script>
+                <script src="js/jquery.vmap.usa.js"></script>
+                 
+                <script>
+                jQuery('#vmap').vectorMap({
+                    map: 'usa_en',
+                    backgroundColor: null,
+                    color: '#ffffff',
+                    enableZoom: true,
+                    showTooltip: true,
+                    selectedColor: null,
+                    hoverColor: null,
+                    colors: {
+                        mo: '#2980b9',
+                        fl: '#27ae60',
+                        or: '#8e44ad'
+                    },
+                    onRegionClick: function(event, code, region){
+                        event.preventDefault();
+                    }
+                });
+                </script>
+                 
+                <div id="vmap" style="width: 600px; height: 400px;"></div>
+
             </div>
             <hr>
             <!--post-->
