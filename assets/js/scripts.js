@@ -114,6 +114,7 @@
                 }
                 if (scroll === 0) {
                     $(".l-navbar").removeClass("actives");
+                    $(".logoImage").removeClass("logoScroll");
                 }
             });
         }
