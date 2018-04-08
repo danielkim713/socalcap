@@ -2693,6 +2693,15 @@ dl.toggle.time-line:before {
     font-size: 16px;
 }
 
+.half-txt2 {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    color: #7e7e7e; 
+    line-height: 25px;
+    font-size: 16px;
+}
+
 /*------------------------------------------------------------------
     clients
 -------------------------------------------------------------------*/
