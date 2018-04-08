@@ -2,8 +2,22 @@ h3 {
 	font-size: 28px;
 }
 
-.actives{
+.active-link {
+	color: #0C5D96!important;
+	font-weight: 600!important;
+}
 
+.login-link {
+	color: #d09300!important;
+}
+
+.box-shadow{
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.center-text{
+	padding-left: 15%; 
+	padding-right: 15%
 }
 
 input[type=text] {
@@ -43,7 +57,6 @@ input[type=text]:focus {
 	margin-bottom: 20px;
 }
 
-
 .box{
 	width: 100%;
 	height: 50px;
@@ -66,7 +79,6 @@ input[type=text]:focus {
 .pad-lr-0 {
 	padding-left: 0px!important;
 	padding-right: 0px!important;
-	margin-bottom: 30px;
 }
 
 .pad-lr-20 {
@@ -74,9 +86,20 @@ input[type=text]:focus {
 	padding-right: 20px!important;
 }
 
+.pad-lr-60 {
+	padding-left: 60px!important;
+	padding-right: 60px!important;
+}
+
 .mar-lr-0 {
 	margin-left:0px!important;
 	margin-right: 0px!important;
+}
+
+.basic-img {
+	width: 100%;
+	height: auto;
+	
 }
 
 .p-thick {
@@ -116,6 +139,13 @@ input[type=text]:focus {
 	background-size: cover;
 }
 
+.commitment-item {
+    	background-image: url(../img/about_city_wide.png);
+  	background-repeat: no-repeat;
+    	background-size: cover;
+	background-position: center;
+}
+	
 .delay-1 {
 	animation-delay: .5s;
 }
@@ -138,6 +168,25 @@ input[type=text]:focus {
 	color: #FFFFFF;
 	margin-bottom: 10px;
 }
+
+
+.line {
+	display: inline-block;
+	width: 69%;
+	background-color: blue;
+	border: .5px solid #E3E3E3;
+	vertical-align: center;
+	margin-top: 24px;
+	}
+
+.line2 {
+	display: inline-block;
+	width: 64%;
+	background-color: blue;
+	border: .5px solid #E3E3E3;
+	vertical-align: center;
+	margin-top: 24px;
+	}
 
 @media  (min-width: 768px){
 	.site-logo{
@@ -176,21 +225,4 @@ input[type=text]:focus {
 		padding-right: 220px;
 	}
 
-	.line{
-	display: inline-block;
-	width: 830px;
-	background-color: blue;
-	border: .5px solid #E3E3E3;
-	vertical-align: center;
-	margin-top: 24px;
-	}
-
-	.line2{
-	display: inline-block;
-	width: 750px;
-	background-color: blue;
-	border: .5px solid #E3E3E3;
-	vertical-align: center;
-	margin-top: 24px;
-	}
 }
