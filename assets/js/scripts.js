@@ -125,11 +125,13 @@
 
                 if (scroll > 10) {
                     $(".l-navbar").addClass("actives");
+                    $(".logoImage").removeClass("logoUnscroll");
                     $(".logoImage").addClass("logoScroll");
                 }
-                if (scroll === 0) {
+                if (scroll < 10) {
                     $(".l-navbar").removeClass("actives");
                     $(".logoImage").removeClass("logoScroll");
+                    $(".logoImage").addClass("logoUnscroll");
                 }
             });
         }

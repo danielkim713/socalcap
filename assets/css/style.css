@@ -319,6 +319,10 @@ pre {
     margin-top: 100px;
 }
 
+.m-top-150 {
+    margin-top: 150px;
+}
+
 /*margin bottom*/
 .m-bot-0 {
     margin-bottom: 0 !important;
@@ -362,6 +366,10 @@ pre {
 
 .m-bot-100 {
     margin-bottom: 100px;
+}
+
+.m-bot-150{
+    margin-bottom: 150px;
 }
 
 .m-left-10 {
